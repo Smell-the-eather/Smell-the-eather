@@ -1,9 +1,14 @@
-- 👋 Hi, I’m @Smell-the-eather
-- 👀 I’m interested in  Embedde systems , web applications , web sites
-- 🌱 I’m currently learning  app development
-- 📫 How to reach me ...
+This is an intergration of python with arduino??
 
-<!---
-Smell-the-eather/Smell-the-eather is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+
+
+implemented libaries in the requirements.txt file
+
+
+
+to setup the port number for arduino on linux follow these commands
+
+sudo groupadd dialout
+sudo gpasswd -a USER dialout
+sudo usermod -a -G dialout USER
+sudo chmod a+rw /dev/ttyACM0
