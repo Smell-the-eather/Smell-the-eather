@@ -1,6 +1,4 @@
-pip install pyserial
-
-pip install vpython
-
-
-pip install v-env
+pip install 
+    - pyserial
+    - vpython
+    - v-env

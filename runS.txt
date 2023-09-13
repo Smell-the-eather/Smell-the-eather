@@ -1,0 +1,29 @@
+"dev/ttyS0" is the special file for the serial port known as COM1 in the windows world
+
+1 Add user to dialout for full access to serial ports
+
+        Run The following commands
+                            - sudo groupadd dialout
+                            - sudo gpasswd -a USER dialout
+                            - sudo usermod -a -G dialout USER
+
+
+
+
+2 run this command everytime after opening the arduino ide to allow access to the port
+                            - sudo chmod a+rw /dev/ttyACM0 
+
+
+3 first follow the instruction to installing and creating a venv so that all dependencies are installed within the cwd not necesarry but highly recommended
+
+4 now open vs studio code then install the pyserial module 
+
+    specify the :
+            - buad rate =  (default usually 9600)
+
+            - port = "dev/ttyACM0"
+
+5 ensure that the serial monitor is off within the arduino ide to allow python to intercept the data
+
+
+6 vwallla it works
